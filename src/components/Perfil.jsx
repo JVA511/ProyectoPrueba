@@ -12,6 +12,9 @@ import { NavLink } from 'react-router-dom'
 
 
 export const Perfil = () => {
+
+  const { logout } = useAuth0();
+
   //AUTENTICACION CON AUTH0 ---- 1
   const { user, isAuthenticated, isLoading } = useAuth0();
   
@@ -59,7 +62,7 @@ export const Perfil = () => {
 
                       <button className="nav-link" id="v-pills-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info" aria-selected="false">Información</button>
 
-                      <button className="nav-link" id="v-pills-cerrarsesion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cerrarsesion" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Desloguearse</button>
+                      <button onClick={() => logout({ returnTo: window.location.origin})} className="nav-link" id="v-pills-cerrarsesion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cerrarsesion" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Desloguearse</button>
                       
                     </div>
                     <div className="tab-content" id="v-pills-tabContent">
@@ -253,7 +256,7 @@ export const Perfil = () => {
                       </Form>
                       </div>
 
-                      <div className="tab-pane fade" id="v-pills-cerrarsesion" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quod accusantium debitis harum exercitationem aliquid, iure iste nostrum aperiam! Ipsa laborum soluta ex quam laudantium aliquam facilis. Asperiores pariatur architecto alias et rerum dolore tempore, delectus laudantium eveniet quasi, rem ipsum doloremque veritatis, accusantium numquam blanditiis enim natus eos distinctio cupiditate quos reprehenderit. Necessitatibus reprehenderit possimus eaque molestiae vitae eligendi modi aspernatur ullam animi ex, sint excepturi accusantium. Aperiam fuga officia eligendi quasi molestiae maiores maxime dicta. Nihil minus accusamus, a sapiente omnis eaque est. Natus quae aperiam maiores magnam? Assumenda, nemo. Cumque excepturi soluta eaque nobis quas voluptates velit odit eligendi, incidunt, explicabo ut, fuga sunt ab? Repellendus doloribus sapiente enim, voluptates explicabo tempora molestias aliquid porro necessitatibus ea laudantium iste suscipit illo ad cupiditate beatae ipsa rem aut quod reiciendis quibusdam? Facilis exercitationem ex pariatur voluptas, aspernatur molestias provident! Nobis laboriosam soluta deserunt fuga, repellat consectetur eaque eveniet!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quod accusantium debitis harum exercitationem aliquid, iure iste nostrum aperiam! Ipsa laborum soluta ex quam laudantium aliquam facilis. Asperiores pariatur architecto alias et rerum dolore tempore, delectus laudantium eveniet quasi, rem ipsum doloremque veritatis, accusantium numquam blanditiis enim natus eos distinctio cupiditate quos reprehenderit. Necessitatibus reprehenderit possimus eaque molestiae vitae eligendi modi aspernatur ullam animi ex, sint excepturi accusantium. Aperiam fuga officia eligendi quasi molestiae maiores maxime dicta. Nihil minus accusamus, a sapiente omnis eaque est. Natus quae aperiam maiores magnam? Assumenda, nemo. Cumque excepturi soluta eaque nobis quas voluptates velit odit eligendi, incidunt, explicabo ut, fuga sunt ab? Repellendus doloribus sapiente enim, voluptates explicabo tempora molestias aliquid porro necessitatibus ea laudantium iste suscipit illo ad cupiditate beatae ipsa rem aut quod reiciendis quibusdam? Facilis exercitationem ex pariatur voluptas, aspernatur molestias provident! Nobis laboriosam soluta deserunt fuga, repellat consectetur eaque eveniet!</div>
+                      <div className="tab-pane fade" id="v-pills-cerrarsesion" role="tabpanel" aria-labelledby="v-pills-messages-tab">Adios</div>
                       
                     </div>
                   </div>
