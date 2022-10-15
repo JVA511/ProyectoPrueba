@@ -6,6 +6,7 @@ import { Footer } from "./Footer"
 export const Home = () => {
   return (
     <>
+    
         <Banner/>
         <ContentHome/>
         <Footer/>
