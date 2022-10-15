@@ -8,6 +8,9 @@ import { Reseñas } from "./components/Reseñas";
 import { Perfil } from "./components/Perfil";
 import { Carrito } from './components/Carrito';
 import { Login } from './components/Login'
+import { InfoNosotros } from './components/InfoNosotros';
+import { Ranking } from './components/Ranking';
+import { Soporte } from './components/Soporte';
 
 
 
@@ -50,7 +53,11 @@ function App() {
                   <Route exact path="/reseñas" element={<Reseñas/>}/>
                   <Route exact path="*" element={<Error404/>}/>
                   <Route exact path="/perfil" element={<Perfil/>}/>
-                  <Route exact path="/carrito" element={<Carrito/>}/>     
+                  <Route exact path="/carrito" element={<Carrito/>}/> 
+                  <Route exact path="/soporte" element={<Soporte/>}/>
+                  <Route exact path="/ranking" element={<Ranking/>}/>
+                  <Route exact path="/info" element={<InfoNosotros/>}/>
+
 
                 </Routes>      
               </BrowserRouter>

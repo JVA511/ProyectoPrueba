@@ -24,12 +24,13 @@ export const Header = () => {
   return (
     isAuthenticated && (
       <>
-      {/* <div>
+      {/* 
+      <div>
         <img src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
         <p>Email: {user.email}</p>
       </div> */}
-      <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
+      <Navbar collapseOnSelect bg="dark" variant="dark" expand="xl">
         <Container fluid>
           <NavLink to='/home'>
               <img fluid src={logo} height="100" alt="No encontrada" />
@@ -57,7 +58,7 @@ export const Header = () => {
                 </h5>
                 <Nav.Link><h5><NavLink to='/reseñas' className="nav-item nav-link text-center">Reseñas</NavLink></h5></Nav.Link>
                 <Nav.Link><h5><NavLink to='/soporte' className="nav-item nav-link text-center">Soporte</NavLink></h5></Nav.Link>
-                <Nav.Link><h5><NavLink to='/nosotros' className="nav-item nav-link text-center">Nosotros</NavLink></h5></Nav.Link>
+                <Nav.Link><h5><NavLink to='/info' className="nav-item nav-link text-center">Nosotros</NavLink></h5></Nav.Link>
                 <Nav.Link><h5><NavLink to='/ranking' className="nav-item nav-link text-center">Ranking</NavLink></h5></Nav.Link>
               </Nav>
               <Form className="d-flex">

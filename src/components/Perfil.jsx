@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Table from 'react-bootstrap/Table';
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -73,7 +74,7 @@ export const Perfil = () => {
                                 <th>Fecha</th>
                                 <th>Monto Total</th>
                                 <th>Estatus</th>
-                                <th>Estatus</th>
+                                <th>Ver</th>
                                 
                               </tr>
                             </thead>
@@ -83,7 +84,7 @@ export const Perfil = () => {
                                 <td>Tasdadasdasdasdadas</td>
                                 <td>adadadasdasdasdasdasd</td>
                                 <td>asdadasd</td>
-                                <td>Tadasdasdasdasd</td>
+                                <td><NavLink to='/pedido1'>Ver pedido</NavLink></td>
                                 
                               </tr>
                               <tr>
@@ -121,7 +122,7 @@ export const Perfil = () => {
                               required
                               type="text"
                               placeholder=""
-                              defaultValue=""
+                              defaultValue={user.name}
                             />
                             <Form.Control.Feedback>Es válido</Form.Control.Feedback>
                           </Form.Group>
@@ -148,7 +149,7 @@ export const Perfil = () => {
                               required
                               type="email"
                               placeholder="Ingresa tu email"
-                              defaultValue=""
+                              defaultValue={user.email}
                             />
                             <Form.Control.Feedback>Es válido!</Form.Control.Feedback>
                             <Form.Control.Feedback type="invalid">
